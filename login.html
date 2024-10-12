@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login เข้าสู่ระบบ </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+      </head>
+    <style>
+    h1{
+        font-family: "JasmineUPC";
+        text-align: center;
+    }
+    </style>
+    </head>
+    <body>
+        <form name="login" method="post" action="checkdata.php"> 
+            <!--เมื่อกดปุ่ม login ให้เชื่อมโยงไปยังหน้า checkdata.php ว่า login ถูกต้องหรือไม่-->
+            <div class="container">
+                <div class="alert alert-success">
+                    <h1 style="color:Tomato;">เข้าสู่ระบบ</h1>
+                    <center><img src="image/login1.png" class="img-rounded"
+                    width="250" height="170"></center> 
+            <table class="table table-hover table-bordered"> 
+                <tr>
+                    <th>ชื่อผู้ใช้ </th>
+                    <td><input type="text" class="form-control"  placeholder="Username" 
+                        name="txtUsername"></td>
+                </tr>
+                <tr>
+                    <th>รหัสผ่าน </th>
+                    <td><input type="password" class="form-control"  placeholder="Password" 
+                        name="txtPassword"></td>
+                </tr>
+            </table>
+        <center><button type="submit" class="btn btn-primary">login</button></center>
+        </div>
+        </form>
+    </body>
+</html>
+
